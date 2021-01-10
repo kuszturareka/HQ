@@ -24,6 +24,15 @@ body {
     text-align: center;
 }
 
+.quiz-container{
+    
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 footer {
     background-color: #54053b;
     opacity: 90%;
@@ -47,4 +56,13 @@ footer {
     font-size: 100%;
     color: #ffffff;
     text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #logo {
+        font-size: 40px;
+        display: table;
+    }
+ #quiz-container {
+     font-size: 50%;}
 }
