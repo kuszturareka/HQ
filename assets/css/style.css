@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap');
+
+#logo {
+    font-family: "Asul", sans-serif;
+    font-size: 70px;
+    padding-right: 50px;
+    color: #730851;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.btn {
+    background-color: #730851;
+    opacity: 90%;
+    color: #ffffff;
+}
