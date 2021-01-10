@@ -1,45 +1,88 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Hearthstone Quiz
+Hearthstone is a fast-paced strategy card game that's easy to learn and massively fun.
 
-Welcome USER_NAME,
+The game allows you to earn gold, card packs and dust. Gold can be used to buy card packs, play in the arena or buy solo adventures. Card packs are always full of random cards that you can collect and use to craft new decks. Dust can be used to create any card you want!
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+Game modes : 
 
-## Gitpod Reminders
+**Single Player Adventures** – these are where you play against the computer in a themed environment. Every time a new Hearthstone season begins a full expansion of cards comes out and usually a new single player adventure along with it.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+**Casual Play** – you play against a randomly selected opponent.
 
-`python3 -m http.server`
+**Ranked Play** – you play against a randomly selected opponent. The more games you win the higher you rank, until you eventually rank Legend. The higher the rank the more rewards you get each month (like extra gold, dust, and cards)
 
-A blue button should appear to click: *Make Public*,
+**Tavern Brawl** – This is a weekly event where players get to play special matches (sometimes against other players, sometimes against the computer), with special rules.
 
-Another blue button should appear to click: *Open Browser*.
+[https://www.atablefullofjoy.com/what-is-hearthstone/#:~:text=Hearthstone%20is%20a%20fun%2C%20free,to%20learn%20and%20massively%20fun.]
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The purpose of this Hearthstone quiz is mostly fun. By answering a few questions, you can get a general idea of what Hero may suit you. 
 
-A blue button should appear to click: *Make Public*,
+Hero cards represent the players in the game. They govern how much health the players have remaining, what cards they can put in their deck, and detail the style of the deck.
 
-Another blue button should appear to click: *Open Browser*.
+Players start with a hero from a particular class that then determines what other cards can be utilized or included in the deck. For example, a hero with the rogue class would allow you to play a Rogue's signature attack, Backstab.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+During the game, standard heroes can use emotes (6 basic emotes) during the match as a minimal form of communication with the other player.
 
-## Updates Since The Instructional Video
+Each hero has a Class, and a Hero Power (an ability that can be used once per turn for a cost).
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+When your opponent's hero's Health is reduced to 0, you win the game.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+[https://hearthstone.fandom.com/wiki/Hero]
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+# User Experience (UX)
+## User Stories
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Visitor Goals
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+a. As a former World of Warcraft player, I would like to dive in the Hearthstone realm and relive th narrative.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+b. As a new Hearthstone player, I would like to know what Hero suits me. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+c. As a Hearthstone player, I would like to try the quiz out of fun.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Design
+### Colour Scheme
 
---------
+The two main colours used are 
 
-Happy coding!
+Color scheme taken from [Scheme Color](https://www.schemecolor.com/hearthstone-logo-colors.php).
+
+### Typography
+
+
+
+## Wireframes
+Marvel Wireframe
+## Features
+Existing Features
+
+1.   
+2.  
+3. 
+4. 
+
+
+## Technologies Used
+### Languages Used
+
+1. [HTML5](https://en.wikipedia.org/wiki/HTML) 
+
+2. [CSS3](https://en.wikipedia.org/wiki/CSS)
+
+3. [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+
+### Frameworks, Libraries & Programs Used  
+
+- jQuery
+
+- Google Fonts
+
+- Font Awesome
+
+- Gitpod
+
+- GitHub
+
+- Marvel
+
+## Testing
