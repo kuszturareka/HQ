@@ -23,25 +23,7 @@ body {
     background-size: cover;
     text-align: center;
 }
-#previous {
-    background-color: #730851;
-    opacity: 90%;
-    color: #ffffff;
-    border: none;
-}
-#next {
-    background-color: #730851;
-    opacity: 90%;
-    color: #ffffff;
-    border: none;
-}
 
-#submit {
-    background-color: #730851;
-    opacity: 90%;
-    color: #ffffff;
-    border: none;
-}
 footer {
     background-color: #54053b;
     opacity: 90%;
