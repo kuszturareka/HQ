@@ -22,3 +22,11 @@ body {
     background-size: cover;
     text-align: center;
 }
+
+footer {
+    background-color: #54053b;
+    opacity: 90%;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
