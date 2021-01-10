@@ -14,3 +14,11 @@
     opacity: 90%;
     color: #ffffff;
 }
+
+body {
+    font-family: "Asul", sans-serif;
+    color: #ffffff;
+    background: url(https://wallpaperaccess.com/full/973179.jpg) no-repeat center fixed;
+    background-size: cover;
+    text-align: center;
+}
