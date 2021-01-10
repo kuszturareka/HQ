@@ -13,6 +13,7 @@
     background-color: #730851;
     opacity: 90%;
     color: #ffffff;
+    position: relative;
 }
 
 body {
@@ -29,4 +30,21 @@ footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
+}
+
+.social-networks {
+    text-align: center;
+    list-style-type: none;
+}
+
+.social-networks li {
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.social-networks i {
+    font-size: 100%;
+    color: #ffffff;
+    text-align: center;
 }
