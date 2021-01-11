@@ -7,6 +7,7 @@
     color: #730851;
     vertical-align: middle;
     text-align: center;
+    padding-top: 5%;
 }
 
 .btn {
@@ -22,23 +23,28 @@ body {
     background: url(https://wallpaperaccess.com/full/973179.jpg) no-repeat center fixed;
     background-size: cover;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .quiz-container{
     
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+
+
 footer {
     background-color: #54053b;
     opacity: 90%;
     position: fixed;
     bottom: 0px;
     width: 100%;
+    
 }
 /*/*https://github.com/Code-Institute-Solutions/Love-Running-Solutions/tree/master/06_site_footer*/ */
 .social-networks {
@@ -50,6 +56,8 @@ footer {
     text-align: center;
     display: inline-block;
     margin-top: 10px;
+    vertical-align: middle;
+
 }
 
 .social-networks i {
@@ -58,11 +66,30 @@ footer {
     text-align: center;
 }
 
+
+.answers {
+  margin-bottom: 20px;
+  text-align: center;
+  display: inline-block;
+
+}
+.answers label{
+  display: block;
+  margin-bottom: 5px;}
+
+#submit {
+      margin: 5px;
+  }
+
 @media screen and (max-width: 600px) {
     #logo {
         font-size: 40px;
         display: table;
+        padding-left: 50px;
     }
- #quiz-container {
-     font-size: 50%;}
+ body {
+     font-size: 75%;
+    }
+
 }
+

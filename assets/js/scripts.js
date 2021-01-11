@@ -1,158 +1,223 @@
-let quiz;
 
-$(document).ready(function (){
-    $("#quiz-container").toggle();
-    $("#start-btn").onclick(function(){
-        $("landing-page", "#quiz-container").toggle();
-    });
+
+
+(function(){
+
+  function buildQuiz(){
     
-    for (let i = 0; i < answerButtonRef.length; i++) {
-        answerButtonRef[i].addEventListener("click", function (e){
-            selectAnswer(e.target.dataset.nextQuestion);
-        });
-    }
-});
+    const output = [];
 
+   
+    myQuestions.forEach(
+      (currentQuestion, questionNumber) => {
+
+    
+        const answers = [];
+
+        for(letter in currentQuestion.answers){
+
+        answers.push(
+            `<label>
+              <input type="radio" name="question${questionNumber}" value="${letter}">
+              ${letter} :
+              ${currentQuestion.answers[letter]}
+            </label>`
+          );
+        }
+
+        output.push(
+          `<div class="question"> ${currentQuestion.question} </div>
+            <div class="answers"> ${answers.join("")} </div>
+          `
+        );
+      }
+    );
+
+
+    quizContainer.innerHTML = output.join('');
+  }
+
+  function showResults(){
+
+  
+    const answerContainers = quizContainer.querySelectorAll('.answers');
+
+  
+    let numCorrect = 0;
+
+   
+    myQuestions.forEach( (currentQuestion, questionNumber) => {
+
+      
+      const answerContainer = answerContainers[questionNumber];
+      const selector = `input[name=question${questionNumber}]:checked`;
+      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+     
+      if(userAnswer === currentQuestion.correctAnswer){
+        
+        numCorrect++;
+
+        
+        answerContainers[questionNumber].style.color = 'lightgreen';
+      }
+      
+      else{
+        
+        answerContainers[questionNumber].style.color = 'red';
+      }
+    });
+
+    
+    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+  }
+
+  
+
+  
   const quizContainer = document.getElementById('quiz');
   const resultsContainer = document.getElementById('results');
   const submitButton = document.getElementById('submit');
   const myQuestions = [
-  {
+    { "id": 1,
     question: "Player casts Assasinate on Acolyte of pain. Acolyte's owner will:",
     answers: {
-        1: "Draw no cards",
-        2: "Draw 1 card.",
-        3: "Draw 2 cards",
-        4: "Draw 3 cards"
+        a: "Draw no cards",
+        b: "Draw 1 card.",
+        c: "Draw 2 cards",
+        d: "Draw 3 cards"
     },
-    correctAnswer: "1"
+    correctAnswer: "a"
 },
 
 {
+    "id": 2,
     question: "Priest has two Sorcerer's Apprentices on board and two Shadowforms in hand. <br> How many times can he use Hero Power this turn?",
     answers: {
-        1: "1",
-        2: "2",
-        3: "3",
-        4: "4"
+        a: "1",
+        b: "2",
+        c: "3",
+        d: "4"
     },
-    correctAnswer: "3"
+    correctAnswer: "c"
 },
 
 {
+    "id": 3,
     question: "Who developed Hearthstone?",
     answers: {
-        1: "Riot Games",
-        2: "Blizzard Entertainment",
-        3: "EA Games",
-        4: "Epic Games"
+        a: "Riot Games",
+        b: "Blizzard Entertainment",
+        c: "EA Games",
+        d: "Epic Games"
     },
-    correctAnswer: "2"
+    correctAnswer: "b"
 },
 
 {
+    "id": 4,
     question: "How many cards are in a deck?",
     answers: {
-        1: "15",
-        2: "20",
-        3: "28",
-        4: "30"
+        a: "15",
+        b: "20",
+        c: "28",
+        d: "30"
     },
-    correctAnswer: "4"
+    correctAnswer: "d"
 },
-{
+{   "id": 5,
     question: "How many types of cards are there?",
     answers: {
-        1: "4",
-        2: "6",
-        3: "8",
-        4: "5"
+        a: "4",
+        b: "6",
+        c: "8",
+        d: "5"
     },
-    correctAnswer: "1"
+    correctAnswer: "a"
 },
 
-{
+{   "id": 6,
     question: "What is the rarest card?",
     answers: {
-        1: "Epic",
-        2: "Rare",
-        3: "Legendary",
-        4: "Common"
+        a: "Epic",
+        b: "Rare",
+        c: "Legendary",
+        d: "Common"
     },
-    correctAnswer: "3"
+    correctAnswer: "c"
 },
 
-{
+{   "id": 7,
     question: " True or False : The Assassinate card can destroy a minion with Divine Shield.",
     answers: {
-        1: "True",
-        2: "False"
+        a: "True",
+        b: "False"
     },
-    correctAnswer: "1"
+    correctAnswer: "a"
 },
 
-{
+{   "id": 8,
     question: " True or False : You can increase the damage of Eye for an Eye with Spellpower.",
     answers: {
-        1: "True",
-        2: "False"
+        a: "True",
+        b: "False"
     },
-    correctAnswer: "1"
+    correctAnswer: "a"
 },
 
-{
+{   "id": 9,
     question: " True or False : Crazed Alchemist's battlecry can destroy a minion with 0 Attack. ",
     answers: {
-        1: "True",
-        2: "False"
+        a: "True",
+        b: "False"
     },
-    correctAnswer: "1"
+    correctAnswer: "a"
 },
 
-{
+{   "id": 10,
     question: "Mage has Spellbender secret readied. Opponent Rogue plays Shadowstept.",
     answers: {
-        1: "Spellbender Minion will return to Mage's hand",
-        2: "Spellbender Minion will return to Rogue's hand.",
-        3: " The secret will not trigger.",
-        4: "Mage incurs -10 damage."
+        a: "Spellbender Minion will return to Mage's hand",
+        b: "Spellbender Minion will return to Rogue's hand.",
+        c: " The secret will not trigger.",
+        d: "Mage incurs -10 damage."
     },
-    correctAnswer: "1"
+    correctAnswer: "a"
 },
 
-{
+{   "id": 11,
     question: "Who says Put this apple on your head?",
     answers: {
-        1: "Knife Juggler",
-        2: "Big Game Hunter",
-        3: "Northshire Cleric",
-        4: "Mad Bomber"
+        a: "Knife Juggler",
+        b: "Big Game Hunter",
+        c: "Northshire Cleric",
+        d: "Mad Bomber"
     },
-    correctAnswer: "1"
+    correctAnswer: "a"
 },
 
-{
+{   "id": 12,
     question: " Priest gains control of Paladin's minion with Blessing of Wisdom on it. Who will draw a card if this minion attacks?",
     answers: {
-        1: "Paladin",
-        2: "Both",
-        3: "None"
+        a: "Paladin",
+        b: "Both",
+        c: "None"
     },
-    correctAnswer: "1"
+    correctAnswer: "a"
 },
 
-{
+{   "id": 13,
     question: " Priest takes control of an enemy minion, then Rogue casts Sap on it.",
     answers: {
-        1: "It will return to Rogue's hand",
-        2: "It will return to Priest's hand.",
-        3: "Will take damage.",
-        4: "Nothing happens."
+        a: "It will return to Rogue's hand",
+        b: "It will return to Priest's hand.",
+        c: "Will take damage.",
+        d: "Nothing happens."
     },
-    correctAnswer: "2"
+    correctAnswer: "b"
 },
 
-{
+{   "id": 14,
     question: " True or False : The Hunter's Snipe will trigger when opponent casts Animal Companion.",
     answers: {   
         a: "True",
@@ -160,10 +225,15 @@ $(document).ready(function (){
     },
     correctAnswer: "b"
 }
-];
+
+  ];
+
+  buildQuiz();
+
+  submitButton.addEventListener('click', showResults);
 
 
-
+})();
 
 
 
