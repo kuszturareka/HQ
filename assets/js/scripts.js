@@ -1,41 +1,31 @@
+const quizContainer = document.getElementById('quiz');
+const resultsContainer = document.getElementById('results');
+const submitButton = document.getElementById('submit');
+const startButton = document.getElementById('start-btn');
+let questionNumber = 1
+let score = 0
 
 
 
-(function(){
 
-  function buildQuiz(){
-    
-    const output = [];
-
-   
-    myQuestions.forEach(
-      (currentQuestion, questionNumber) => {
-
-    
+function displayQuestions(questionNumber) {
         const answers = [];
+        let question = myQuestions[questionNumber - 1]
+        for(answer in question.answers){
+            answers.push(
+                `<label>
+                <input class= "option" type="radio" name="question${questionNumber}" value="${answer}">
+                ${answer} :
+                ${question.answers[answer]}
+                </label>`
+            );
+            }
 
-        for(letter in currentQuestion.answers){
-
-        answers.push(
-            `<label>
-              <input type="radio" name="question${questionNumber}" value="${letter}">
-              ${letter} :
-              ${currentQuestion.answers[letter]}
-            </label>`
-          );
-        }
-
-        output.push(
-          `<div class="question"> ${currentQuestion.question} </div>
-            <div class="answers"> ${answers.join("")} </div>
-          `
-        );
+            return `<div class="question"> ${question.question} </div>
+                    <div class="answers"> ${answers.join("")} </div>
+                   ` 
       }
-    );
 
-
-    quizContainer.innerHTML = output.join('');
-  }
 
   function showResults(){
 
@@ -75,9 +65,6 @@
   
 
   
-  const quizContainer = document.getElementById('quiz');
-  const resultsContainer = document.getElementById('results');
-  const submitButton = document.getElementById('submit');
   const myQuestions = [
     { "id": 1,
     question: "Player casts Assasinate on Acolyte of pain. Acolyte's owner will:",
