@@ -7,13 +7,15 @@ let score = 0;
 
 startButton.addEventListener('click', function(){
     quizContainer.innerHTML = displayQuestion(questionNumber);
+    if (startButton) {
+       startButton.style.display = 'none';
+    }
 });
 
-//let option = document.querySelector('.option')
 
 $('#next').click(function(){
     console.log("Clicked");
-    if(questionNumber ==myQuestions.length - 1){
+    if(questionNumber == myQuestions.length - 1){
         //show final answer
     }
     checkCorrectAnswer(questionNumber);
