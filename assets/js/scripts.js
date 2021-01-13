@@ -9,11 +9,11 @@ startButton.addEventListener('click', function(){
     quizContainer.innerHTML = displayQuestion(questionNumber);
 });
 
-let option = document.querySelector('.option')
+//let option = document.querySelector('.option')
 
 $('#next').click(function(){
     console.log("Clicked");
-    if(questionNumber == question.length - 1){
+    if(questionNumber ==myQuestions.length - 1){
         //show final answer
     }
     checkCorrectAnswer(questionNumber);
@@ -29,13 +29,15 @@ function checkCorrectAnswer(questionNumber){
 
 }
 
-function displayQuestions(questionNumber) {
+
+
+function displayQuestion(questionNumber) {
         const answers = [];
         let question = myQuestions[questionNumber - 1]
         for(answer in question.answers){
             answers.push(
                 `<label>
-                <input class= "option" type="radio" name="question${questionNumber}" value="${answer}">
+                <input class= "option" type="radio" name="question${questionNumber - 1}" value="${answer}">
                 ${answer} :
                 ${question.answers[answer]}
                 </label>`
@@ -47,7 +49,7 @@ function displayQuestions(questionNumber) {
                    ` ;
       }
 
- const questionNumber = [
+ const myQuestions = [
     { id: 1,
     question: "Player casts Assasinate on Acolyte of pain. Acolyte's owner will:",
     answers: {
