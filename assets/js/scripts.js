@@ -27,8 +27,7 @@ $('#next').click(function(){
 });
 
     function checkCorrectAnswer(questionNumber){
-        if(quizContainer.answers === correctAnswer)
-         score += 1;
+        
     // grab the element that was checked
     // grab the alphabet
     // check alphabet against correct answer for question number
