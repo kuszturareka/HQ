@@ -36,6 +36,13 @@ body {
     margin-bottom: 50px;
 }
 
+#next {
+    background-color: #730851;
+    opacity: 90%;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 20px
+}
 
 
 footer {
