@@ -2,21 +2,22 @@ const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 const startButton = document.getElementById('start-btn');
-let questionNumber = 1
-let score = 0
+let questionNumber = 1;
+let score = 0;
 
 startButton.addEventListener('click', function(){
     quizContainer.innerHTML = displayQuestion(questionNumber);
+});
 
-})
+let option = document.querySelector('.option')
 
 $('#next').click(function(){
-    console.log("Clicked")
+    console.log("Clicked");
     if(questionNumber == question.length - 1){
         //show final answer
     }
-    checkCorrectAnswer(questionNumber)
-    questionNumber++
+    checkCorrectAnswer(questionNumber);
+    questionNumber++;
     quizContainer.innerHTML = displayQuestion(questionNumber);
 })
 
@@ -43,50 +44,11 @@ function displayQuestions(questionNumber) {
 
             return `<div class="question"> ${question.question} </div>
                     <div class="answers"> ${answers.join("")} </div>
-                   ` 
+                   ` ;
       }
 
-
-  function showResults(){
-
-  
-    const answerContainers = quizContainer.querySelectorAll('.answers');
-
-  
-    let numCorrect = 0;
-
-   
-    myQuestions.forEach( (currentQuestion, questionNumber) => {
-
-      
-      const answerContainer = answerContainers[questionNumber];
-      const selector = `input[name=question${questionNumber}]:checked`;
-      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-
-     
-      if(userAnswer === currentQuestion.correctAnswer){
-        
-        numCorrect++;
-
-        
-        answerContainers[questionNumber].style.color = 'lightgreen';
-      }
-      
-      else{
-        
-        answerContainers[questionNumber].style.color = 'red';
-      }
-    });
-
-    
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-  }
-
-  
-
-  
-  const myQuestions = [
-    { "id": 1,
+ const questionNumber = [
+    { id: 1,
     question: "Player casts Assasinate on Acolyte of pain. Acolyte's owner will:",
     answers: {
         a: "Draw no cards",
@@ -98,7 +60,7 @@ function displayQuestions(questionNumber) {
 },
 
 {
-    "id": 2,
+    id: 2,
     question: "Priest has two Sorcerer's Apprentices on board and two Shadowforms in hand. <br> How many times can he use Hero Power this turn?",
     answers: {
         a: "1",
@@ -110,7 +72,7 @@ function displayQuestions(questionNumber) {
 },
 
 {
-    "id": 3,
+    id: 3,
     question: "Who developed Hearthstone?",
     answers: {
         a: "Riot Games",
@@ -122,7 +84,7 @@ function displayQuestions(questionNumber) {
 },
 
 {
-    "id": 4,
+    id: 4,
     question: "How many cards are in a deck?",
     answers: {
         a: "15",
@@ -132,7 +94,7 @@ function displayQuestions(questionNumber) {
     },
     correctAnswer: "d"
 },
-{   "id": 5,
+{   id: 5,
     question: "How many types of cards are there?",
     answers: {
         a: "4",
@@ -143,7 +105,7 @@ function displayQuestions(questionNumber) {
     correctAnswer: "a"
 },
 
-{   "id": 6,
+{   id: 6,
     question: "What is the rarest card?",
     answers: {
         a: "Epic",
@@ -154,7 +116,7 @@ function displayQuestions(questionNumber) {
     correctAnswer: "c"
 },
 
-{   "id": 7,
+{   id: 7,
     question: " True or False : The Assassinate card can destroy a minion with Divine Shield.",
     answers: {
         a: "True",
@@ -163,7 +125,7 @@ function displayQuestions(questionNumber) {
     correctAnswer: "a"
 },
 
-{   "id": 8,
+{   id: 8,
     question: " True or False : You can increase the damage of Eye for an Eye with Spellpower.",
     answers: {
         a: "True",
@@ -172,7 +134,7 @@ function displayQuestions(questionNumber) {
     correctAnswer: "a"
 },
 
-{   "id": 9,
+{   id: 9,
     question: " True or False : Crazed Alchemist's battlecry can destroy a minion with 0 Attack. ",
     answers: {
         a: "True",
@@ -181,7 +143,7 @@ function displayQuestions(questionNumber) {
     correctAnswer: "a"
 },
 
-{   "id": 10,
+{   id: 10,
     question: "Mage has Spellbender secret readied. Opponent Rogue plays Shadowstept.",
     answers: {
         a: "Spellbender Minion will return to Mage's hand",
@@ -192,7 +154,7 @@ function displayQuestions(questionNumber) {
     correctAnswer: "a"
 },
 
-{   "id": 11,
+{   id: 11,
     question: "Who says Put this apple on your head?",
     answers: {
         a: "Knife Juggler",
@@ -203,7 +165,7 @@ function displayQuestions(questionNumber) {
     correctAnswer: "a"
 },
 
-{   "id": 12,
+{   id: 12,
     question: " Priest gains control of Paladin's minion with Blessing of Wisdom on it. Who will draw a card if this minion attacks?",
     answers: {
         a: "Paladin",
@@ -213,7 +175,7 @@ function displayQuestions(questionNumber) {
     correctAnswer: "a"
 },
 
-{   "id": 13,
+{   id: 13,
     question: " Priest takes control of an enemy minion, then Rogue casts Sap on it.",
     answers: {
         a: "It will return to Rogue's hand",
@@ -224,7 +186,7 @@ function displayQuestions(questionNumber) {
     correctAnswer: "b"
 },
 
-{   "id": 14,
+{   id: 14,
     question: " True or False : The Hunter's Snipe will trigger when opponent casts Animal Companion.",
     answers: {   
         a: "True",
@@ -233,11 +195,4 @@ function displayQuestions(questionNumber) {
     correctAnswer: "b"
 }
 
-  ];
-
-
-
-
-
-
-
+];
