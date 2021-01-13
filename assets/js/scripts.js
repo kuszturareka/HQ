@@ -7,6 +7,7 @@ let score = 0;
 
 startButton.addEventListener('click', function(){
     quizContainer.innerHTML = displayQuestion(questionNumber);
+    //https://stackoverflow.com/questions/33049365/hide-a-div-onclick-in-pure-javascript//
     if (startButton) {
        startButton.style.display = 'none';
     }
