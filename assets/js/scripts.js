@@ -5,8 +5,28 @@ const startButton = document.getElementById('start-btn');
 let questionNumber = 1
 let score = 0
 
+startButton.addEventListener('click', function(){
+    quizContainer.innerHTML = displayQuestion(questionNumber);
 
+})
 
+$('#next').click(function(){
+    console.log("Clicked")
+    if(questionNumber == question.length - 1){
+        //show final answer
+    }
+    checkCorrectAnswer(questionNumber)
+    questionNumber++
+    quizContainer.innerHTML = displayQuestion(questionNumber);
+})
+
+function checkCorrectAnswer(questionNumber){
+    // grab the element that was checked
+    // grab the alphabet
+    // check alphabet against correct answer for question number
+    // if correct , inncrement score
+
+}
 
 function displayQuestions(questionNumber) {
         const answers = [];
@@ -215,12 +235,9 @@ function displayQuestions(questionNumber) {
 
   ];
 
-  buildQuiz();
-
-  submitButton.addEventListener('click', showResults);
 
 
-})();
+
 
 
 
