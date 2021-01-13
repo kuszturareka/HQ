@@ -32,12 +32,11 @@ When your opponent's hero's Health is reduced to 0, you win the game.
 
 # User Experience (UX)
 ## User Stories
-
-### Visitor Goals
-
 a. As a former World of Warcraft player, I would like to dive in the Hearthstone realm and relive the narrative.
 
 b. As a Hearthstone player, I would like to try the quiz out of fun.
+
+### Visitor Goals
 
 ## Design
 ### Colour Scheme
@@ -74,16 +73,18 @@ Existing Features
 
 ### Frameworks, Libraries & Programs Used  
 
-- jQuery
+- [jQuery](https://jquery.com/)
 
-- Google Fonts
+- [JSHint](https://jshint.com/)
 
-- Font Awesome
+- [Google Fonts](https://fonts.google.com/)
 
-- Gitpod
+- [Font Awesome](https://fontawesome.com/)
 
-- GitHub
+- [Gitpod](https://gitpod.io/)
 
-- Marvel
+- [GitHub](https://github.com/)
+
+- [Marvel](https://marvelapp.com/)
 
 ## Testing
