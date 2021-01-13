@@ -14,6 +14,7 @@ startButton.addEventListener('click', function(){
 });
 
 
+
 $('#next').click(function(){
     console.log("Clicked");
     if(questionNumber == myQuestions.length - 1){
@@ -24,13 +25,22 @@ $('#next').click(function(){
     quizContainer.innerHTML = displayQuestion(questionNumber);
 })
 
+
+
 function checkCorrectAnswer(questionNumber){
-    // grab the element that was checked
-    // grab the alphabet
-    // check alphabet against correct answer for question number
-    // if correct , inncrement score
+    questionNumber.forEach(function(checkCorrectAnswer, i) {
+        var answer = document.getElementById("answers" + (i + 1)).value;
+
+        if (answerIsCorrect(answer, correctAnswer)) {
+            alert("Well done!");
+
+        } else {
+            alert("Too bad!");
+        }
+    });
 
 }
+
 
 
 
@@ -52,6 +62,7 @@ function displayQuestion(questionNumber) {
                    ` ;
       }
 
+    
  const myQuestions = [
     { id: 1,
     question: "Player casts Assasinate on Acolyte of pain. Acolyte's owner will:",
