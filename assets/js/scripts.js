@@ -39,8 +39,19 @@ $('#next').click(function(){
         })
         let question = myQuestions[questionNumber]
         let correctAnswer = questionNumber.correctAnswer
+        console.log("questionNumber", questionNumber)
+        console.log("question", question)
+        console.log("selectedAnswer", correctAnswer)
+        if (selectedAnswer == correctAnswer){
+            //answer is correct 
+            console.log("Correct Answer")
+            score++}
+            else {
+            // answer is wrong
+            console.log("Wrong Answer")
+            }
+        }
 
-    }
 
 
 
