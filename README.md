@@ -87,4 +87,57 @@ Existing Features
 
 - [Marvel](https://marvelapp.com/)
 
-## Testing
+## **Testing**
+### **Testing**
+
+The [W3C Markup Validator](https://validator.w3.org/) and [W3C CSS Validator Services](https://jigsaw.w3.org/css-validator/validator) were used to validate the project to ensure there were no syntax errors.
+
+Also, [JSHint](https://jshint.com/) was used for the Javascript file. 
+
+### **Automated Testing**
+For the automated testing, I have used Lighthouse. Results can be found in the **Testing Folder**.
+
+### **Further Testing**
+The Website was tested on Google Chrome, Microsoft Edge and Opera browsers.
+
+The website was viewed on a variety of devices such as Laptop, Huawei P30 Pro, Huawei P20 Pro and Samsung S9.
+
+A large amount of testing was done to ensure that all pages were linking correctly.
+
+### **Fixed Bugs**
+ 1. Footer not sticking to the bottom - fixed in CSS by using the "position : fixed" and "bottom : 0" elements.
+ 2. Footer appearing on top of last question, without the possibility of scrolling further down - fixed by setting body margin. 
+ 3. Footer not being wide enough to fit the screen - fixed by setting the width ti 100%.
+ 4. Background image zooming in after entering the game. Cover property sizes the whole image perfectly on the landing page, but not on quiz page (either zooms in or repeats). Tried fixing with "No repeat" but it leaves a white space above the footer - fixed by adding no-repeat center fixed and background-size: cover properties. 
+ 5. Questions not wrapping properly - fixed by modifying margin to percentages instead of pixels. 
+ 6. Vertically aligned the Hearthstone Quiz logo. but it moved to the left - fixed by removing the display table value. 
+ 7. Quiz not moving forward when clicking Next - fixed by correcting "if" statement (myQuestions instead of questions).
+ 8. Console displaying wrong question ID compared to what appears on the live site - fixed by  modifying the ID of the question and the total number of questions. 
+ 9. Total score not appearing after the last question - modified the total number of questions (14 in total, but starting from 0).
+ 10. When the correct answer is being clicked on, it is being recognized as a wrong answer. When clicking "Next", the console implies that the question has been answered correctly. 
+
+### **Known Bugs**
+
+
+
+## **Deployment**
+The project was deployed to GitHub Pages using the following steps:
+
+Log in to GitHub and locate the GitHub Repository.
+
+At the top of the Repository, locate the "Settings" Button on the menu.
+
+Scroll down the Settings page until you locate the "GitHub Pages" Section.
+
+Under "Source", click the dropdown called "None" and select "Master Branch".
+
+Click "Save" and refresh the page.
+
+Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+
+## **Credits**
+
+### **Content**
+The quiz information (Q/A) has been taken from [Youtube](https://www.youtube.com/watch?v=N3unf-eGS9Q)
+
+### **Acknowledgements**
