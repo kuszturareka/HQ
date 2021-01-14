@@ -5,12 +5,14 @@ let score = 0;
 let totalQuestions = 13;
 
 // https://stackoverflow.com/questions/34798781/how-to-disable-a-button-until-another-button-is-clicked-in-jquery
-$(document).ready(function($) {
-   $("#next").attr('disabled', 'disabled');
-   $("#start-btn").click(function(){
-     $("#next").removeAttr("disabled"); // removing attribute
-   });
+
+
+  $("#next").hide();
+  $("#start-btn").click(function(){
+  $("#next").show();
 });
+
+
 startButton.addEventListener('click', function(){
     quizContainer.innerHTML = displayQuestion(questionNumber);
     //https://stackoverflow.com/questions/33049365/hide-a-div-onclick-in-pure-javascript//
