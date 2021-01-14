@@ -1,4 +1,4 @@
-# Hearthstone Quiz
+# [Hearthstone Quiz](https://hearthstone.gamepedia.com/Hearthstone_Wiki)
 
 ![](assets/images/logo.png)
 
@@ -16,8 +16,6 @@ Game modes :
 
 **Tavern Brawl** – This is a weekly event where players get to play special matches (sometimes against other players, sometimes against the computer), with special rules.
 
-[https://www.atablefullofjoy.com/what-is-hearthstone/#:~:text=Hearthstone%20is%20a%20fun%2C%20free,to%20learn%20and%20massively%20fun.]
-
 Hero cards represent the players in the game. They govern how much health the players have remaining, what cards they can put in their deck, and detail the style of the deck.
 
 Players start with a hero from a particular class that then determines what other cards can be utilized or included in the deck. For example, a hero with the rogue class would allow you to play a Rogue's signature attack, Backstab.
@@ -30,13 +28,28 @@ When your opponent's hero's Health is reduced to 0, you win the game.
 
 [https://hearthstone.fandom.com/wiki/Hero]
 
+## Table of Content
+  - #### [UX (User Experience)](#ux--user-experience-)
+    - #### [User Stories](#user-stories)
+    - #### [User Goals](#user-goals)
+    - #### [Design](#design)
+        - #### [Color Scheme](#color-scheme) 
+        - #### [Typography](#typography)
+    - #### [Wireframes](#wireframes)    
+    - #### [Features](#features)
+        - #### [Existing Features](#existing-features)
+        - #### [Future Features](#future-features) 
+    - #### [Technologies Used](#technologies-used)
+    - #### [Testing](#testing)
+        
+
 # User Experience (UX)
 ## User Stories
 a. As a former World of Warcraft player, I would like to dive in the Hearthstone realm and relive the narrative.
 
 b. As a Hearthstone player, I would like to try the quiz out of fun.
 
-### Visitor Goals
+### User Goals
 
 ## Design
 ### Colour Scheme
@@ -52,14 +65,18 @@ Color scheme taken from [Scheme Color](https://www.schemecolor.com/hearthstone-l
 ## Wireframes
 [Marvel Wireframe](https://marvelapp.com/project/5409869/design/75801397)
 ## Features
-Existing Features
+### Existing Features:
 
 1.   
 2.  
 3. 
 4. 
 
-
+### Future Features: 
+1.
+2.
+3.
+4.
 ## Technologies Used
 ### Languages Used
 
@@ -91,6 +108,8 @@ Existing Features
 ### **Testing**
 
 The [W3C Markup Validator](https://validator.w3.org/) and [W3C CSS Validator Services](https://jigsaw.w3.org/css-validator/validator) were used to validate the project to ensure there were no syntax errors.
+
+     W3C Markup Validator - Results
 
 Also, [JSHint](https://jshint.com/) was used for the Javascript file. 
 
@@ -140,5 +159,6 @@ Scroll back down through the page to locate the now published site link in the "
 
 ### **Content**
 The quiz information (Q/A) has been taken from [Youtube](https://www.youtube.com/watch?v=N3unf-eGS9Q)
+https://www.atablefullofjoy.com/what-is-hearthstone/#:~:text=Hearthstone%20is%20a%20fun%2C%20free,to%20learn%20and%20massively%20fun.
 
 ### **Acknowledgements**
