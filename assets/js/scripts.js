@@ -31,13 +31,15 @@ $('#next').click(function(){
         let selectedAnswer;
         // grab checked element
         //grab the alphabet
-        let options = document.querySelectorAll(.option)
+        let options = document.querySelectorAll('.option')
         options.forEach(function(option){
             if(option.checked){
                 selectedAnswer = option.defaultValue
             }
         })
-        
+        let question = myQuestions[questionNumber]
+        let correctAnswer = questionNumber.correctAnswer
+
     }
 
 
