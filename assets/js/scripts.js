@@ -1,7 +1,6 @@
 const quizContainer = document.getElementById('quiz');
-const resultsContainer = document.getElementById('results');
 const startButton = document.getElementById('start-btn');
-let questionNumber = 1;
+let questionNumber = 0;
 let score = 0;
 let totalQuestions = 13;
 
@@ -17,6 +16,7 @@ startButton.addEventListener('click', function(){
 // step 1
 $('#next').click(function(){
     console.log("Clicked");
+  
 // step 2
 
     if(questionNumber > totalQuestions) {
@@ -39,38 +39,35 @@ $('#next').click(function(){
             }
         })
         let question = myQuestions[questionNumber - 1]
-        let correctAnswer = ["a", "c", "b", "d", "a", "c", "a", "a", "a", "a", "a", "a", "b", "b"];
-        answers.forEach(function(correctAnswer){
-            if()
-        })
-        
+        let correctAnswer = ["b"]
         console.log("questionNumber", questionNumber)
         console.log("question", question)
         console.log("selectedAnswer", selectedAnswer)
         console.log("correctAnswer", correctAnswer)
         if (selectedAnswer == correctAnswer){
-            //answer is correct 
-            console.log("Correct Answer")
-            score++
-        } else {
-            // answer is wrong
-            console.log("Wrong Answer")
-            }
-           
-        }
+        // answer is correct
+        console.log("Correct answer")
+        score++
+    } else {
+        // answer is wrong
+        console.log("Wrong answer")
+    }
+
+
+}
 
 function displayResult(){
     $("#next").hide()
     console.log("End of Quiz")
     // display the total result in the DOM
-    quizContainer.innerHTML = `<div class="endgame" >End of Game. Your score is ${score} out of ${myQuestions.length}.</div>`;
+    quizContainer.innerHTML = `<div class="endgame" >End of Game.<br> Your score is ${score} out of ${myQuestions.length}.</div>`;
 }
 
 
 function displayQuestion(questionNumber) {
         const answers = [];
         let question = myQuestions[questionNumber]
-        for(answer in question.answers){
+        for(var answer in question.answers){
             answers.push(
                 `<label>
                 <input class= "option" type="radio" name="question${questionNumber}" value="${answer}">
@@ -102,36 +99,36 @@ function displayQuestion(questionNumber) {
     id: 2,
     question: "Priest has two Sorcerer's Apprentices on board and two Shadowforms in hand. <br> How many times can he use Hero Power this turn?",
     answers: {
-        a: "1",
+        a: "3",
         b: "2",
-        c: "3",
+        c: "1",
         d: "4"
     },
-    correctAnswer: "c"
+    correctAnswer: "a"
 },
 
 {
     id: 3,
     question: "Who developed Hearthstone?",
     answers: {
-        a: "Riot Games",
-        b: "Blizzard Entertainment",
+        a: "Blizzard Entertainment",
+        b: "Riot Games",
         c: "EA Games",
         d: "Epic Games"
     },
-    correctAnswer: "b"
+    correctAnswer: "a"
 },
 
 {
     id: 4,
     question: "How many cards are in a deck?",
     answers: {
-        a: "15",
-        b: "20",
+        a: "30",
+        b: "25",
         c: "28",
-        d: "30"
+        d: "18"
     },
-    correctAnswer: "d"
+    correctAnswer: "a"
 },
 {   id: 5,
     question: "How many types of cards are there?",
@@ -147,12 +144,12 @@ function displayQuestion(questionNumber) {
 {   id: 6,
     question: "What is the rarest card?",
     answers: {
-        a: "Epic",
+        a: "Legendary",
         b: "Rare",
-        c: "Legendary",
+        c: "Epic",
         d: "Common"
     },
-    correctAnswer: "c"
+    correctAnswer: "a"
 },
 
 {   id: 7,
@@ -217,25 +214,22 @@ function displayQuestion(questionNumber) {
 {   id: 13,
     question: " Priest takes control of an enemy minion, then Rogue casts Sap on it.",
     answers: {
-        a: "It will return to Rogue's hand",
-        b: "It will return to Priest's hand.",
+        a: "It will return to Priest's hand",
+        b: "It will return to Rogue's hand.",
         c: "Will take damage.",
         d: "Nothing happens."
     },
-    correctAnswer: "b"
+    correctAnswer: "a"
 },
 
 {   id: 14,
     question: " True or False : The Hunter's Snipe will trigger when opponent casts Animal Companion.",
     answers: {   
-        a: "True",
-        b: "False"
+        a: "False",
+        b: "True"
+        
     },
     correctAnswer: "b"
 }
 
 ];
-
-
-
-
