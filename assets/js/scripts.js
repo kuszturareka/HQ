@@ -4,7 +4,7 @@ const submitButton = document.getElementById('submit');
 const startButton = document.getElementById('start-btn');
 let questionNumber = 0;
 let score = 0;
-let totalQuestions = 14;
+let totalQuestions = 4;
 
 startButton.addEventListener('click', function(){
     quizContainer.innerHTML = displayQuestion(questionNumber);
@@ -15,10 +15,11 @@ startButton.addEventListener('click', function(){
 });
 
 
-
+// step 1
 $('#next').click(function(){
     console.log("Clicked");
-    if(questionNumber > totalQuestions){
+// step 2
+    if(questionNumber > totalQuestions) {
         displayResult()
     } else {
     checkCorrectAnswer(questionNumber);
@@ -41,27 +42,33 @@ $('#next').click(function(){
         let correctAnswer = questionNumber.correctAnswer
         console.log("questionNumber", questionNumber)
         console.log("question", question)
-        console.log("selectedAnswer", correctAnswer)
+        console.log("selectedAnswer", selectedAnswer)
+        console.log("correctAnswer", correctAnswer)
         if (selectedAnswer == correctAnswer){
             //answer is correct 
             console.log("Correct Answer")
-            score++}
-            else {
+            score++
+        } else {
             // answer is wrong
             console.log("Wrong Answer")
             }
         }
 
-
+function displayResult(){
+    $("#next").hide()
+    console.log("End of Quiz")
+    // display the total result in the DOM
+    quizContainer.innerHTML = `<div>End of Game. Total score is ${score}</div>`;
+}
 
 
 function displayQuestion(questionNumber) {
         const answers = [];
-        let question = myQuestions[questionNumber - 1]
+        let question = myQuestions[questionNumber]
         for(answer in question.answers){
             answers.push(
                 `<label>
-                <input class= "option" type="radio" name="question${questionNumber - 1}" value="${answer}">
+                <input class= "option" type="radio" name="question${questionNumber}" value="${answer}">
                 ${answer} :
                 ${question.answers[answer]}
                 </label>`
