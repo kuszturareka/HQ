@@ -28,11 +28,16 @@ $('#next').click(function(){
 });
 
     function checkCorrectAnswer(questionNumber){
+        let selectedAnswer;
+        // grab checked element
+        //grab the alphabet
+        let options = document.querySelectorAll(.option)
+        options.forEach(function(option){
+            if(option.checked){
+                selectedAnswer = option.defaultValue
+            }
+        })
         
-    // grab the element that was checked
-    // grab the alphabet
-    // check alphabet against correct answer for question number
-    // if correct , inncrement score
     }
 
 
