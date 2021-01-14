@@ -50,7 +50,7 @@ Color scheme taken from [Scheme Color](https://www.schemecolor.com/hearthstone-l
 
 
 ## Wireframes
-Marvel Wireframe
+[Marvel Wireframe](https://marvelapp.com/project/5409869/design/75801397)
 ## Features
 Existing Features
 
@@ -118,6 +118,7 @@ A large amount of testing was done to ensure that all pages were linking correct
 
 ### **Known Bugs**
 1. First question is doubled, but not interfering with the final score. Need to remove one instance of the question.
+2. 
 
 
 ## **Deployment**
