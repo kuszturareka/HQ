@@ -4,12 +4,12 @@ let questionNumber = 0;
 let score = 0;
 let totalQuestions = 13;
 
-
+// https://stackoverflow.com/questions/34798781/how-to-disable-a-button-until-another-button-is-clicked-in-jquery
 $(document).ready(function($) {
    $("#next").attr('disabled', 'disabled');
    $("#start-btn").click(function(){
      $("#next").removeAttr("disabled"); // removing attribute
-   })
+   });
 });
 startButton.addEventListener('click', function(){
     quizContainer.innerHTML = displayQuestion(questionNumber);
@@ -19,7 +19,6 @@ startButton.addEventListener('click', function(){
     }
 });
 
-
 // step 1
 $('#next').click(function(){
     console.log("Clicked");
@@ -27,7 +26,7 @@ $('#next').click(function(){
 // step 2
 
     if(questionNumber > totalQuestions) {
-        displayResult()
+        displayResult();
     } else {
     checkCorrectAnswer(questionNumber);
     quizContainer.innerHTML = displayQuestion(questionNumber);
@@ -39,33 +38,33 @@ $('#next').click(function(){
         let selectedAnswer;
         // grab checked element
         //grab the alphabet
-        let options = document.querySelectorAll('.option')
+        let options = document.querySelectorAll('.option');
         options.forEach(function(option){
             if(option.checked){
-            selectedAnswer = option.defaultValue
+            selectedAnswer = option.defaultValue;
             }
-        })
-        let question = myQuestions[questionNumber - 1]
-        let correctAnswer = ["a"]
-        console.log("questionNumber", questionNumber)
-        console.log("question", question)
-        console.log("selectedAnswer", selectedAnswer)
-        console.log("correctAnswer", correctAnswer)
+        });
+        let question = myQuestions[questionNumber - 1];
+        let correctAnswer = ["a"];
+        console.log("questionNumber", questionNumber);
+        console.log("question", question);
+        console.log("selectedAnswer", selectedAnswer);
+        console.log("correctAnswer", correctAnswer);
         if (selectedAnswer == correctAnswer){
         // answer is correct
-        console.log("Correct answer")
-        score++
+        console.log("Correct answer");
+        score++;
     } else {
         // answer is wrong
-        console.log("Wrong answer")
+        console.log("Wrong answer");
     }
 
 
 }
 
 function displayResult(){
-    $("#next").hide()
-    console.log("End of Quiz")
+    $("#next").hide();
+    console.log("End of Quiz");
     // display the total result in the DOM
     quizContainer.innerHTML = `<div class="endgame" >End of Game.<br> Your score is ${score} out of ${myQuestions.length}.</div>`;
 }
@@ -73,7 +72,7 @@ function displayResult(){
 
 function displayQuestion(questionNumber) {
         const answers = [];
-        let question = myQuestions[questionNumber]
+        let question = myQuestions[questionNumber];
         for(var answer in question.answers){
             answers.push(
                 `<label>
