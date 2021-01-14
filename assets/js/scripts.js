@@ -2,9 +2,9 @@ const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 const startButton = document.getElementById('start-btn');
-let questionNumber = 1;
+let questionNumber = 0;
 let score = 0;
-let total = 14;
+let totalQuestions = 14;
 
 startButton.addEventListener('click', function(){
     quizContainer.innerHTML = displayQuestion(questionNumber);
@@ -18,12 +18,13 @@ startButton.addEventListener('click', function(){
 
 $('#next').click(function(){
     console.log("Clicked");
-    if(questionNumber == myQuestions.length - 1){
-        
-    }
+    if(questionNumber > totalQuestions){
+        displayResult()
+    } else {
     checkCorrectAnswer(questionNumber);
-    questionNumber++;
     quizContainer.innerHTML = displayQuestion(questionNumber);
+    }
+    questionNumber++;
 });
 
     function checkCorrectAnswer(questionNumber){
