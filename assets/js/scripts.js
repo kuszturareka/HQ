@@ -1,7 +1,7 @@
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const startButton = document.getElementById('start-btn');
-let questionNumber = 0;
+let questionNumber = 1;
 let score = 0;
 let totalQuestions = 13;
 
@@ -39,7 +39,11 @@ $('#next').click(function(){
             }
         })
         let question = myQuestions[questionNumber - 1]
-        let correctAnswer = questionNumber.correctAnswer
+        let correctAnswer = ["a", "c", "b", "d", "a", "c", "a", "a", "a", "a", "a", "a", "b", "b"];
+        answers.forEach(function(correctAnswer){
+            if()
+        })
+        
         console.log("questionNumber", questionNumber)
         console.log("question", question)
         console.log("selectedAnswer", selectedAnswer)
@@ -52,14 +56,14 @@ $('#next').click(function(){
             // answer is wrong
             console.log("Wrong Answer")
             }
-         let answers = myQuestions[correctAnswer]   
+           
         }
 
 function displayResult(){
     $("#next").hide()
     console.log("End of Quiz")
     // display the total result in the DOM
-    quizContainer.innerHTML = `<div class="endgame" >End of Game. Your score is ${score} out of ${score}.</div>`;
+    quizContainer.innerHTML = `<div class="endgame" >End of Game. Your score is ${score} out of ${myQuestions.length}.</div>`;
 }
 
 
@@ -83,7 +87,7 @@ function displayQuestion(questionNumber) {
 
     
  const myQuestions = [
-    { id: 0,
+    { id: 1,
     question: "Player casts Assasinate on Acolyte of pain. Acolyte's owner will:",
     answers: {
         a: "Draw no cards",
@@ -95,7 +99,7 @@ function displayQuestion(questionNumber) {
 },
 
 {
-    id: 1,
+    id: 2,
     question: "Priest has two Sorcerer's Apprentices on board and two Shadowforms in hand. <br> How many times can he use Hero Power this turn?",
     answers: {
         a: "1",
@@ -107,7 +111,7 @@ function displayQuestion(questionNumber) {
 },
 
 {
-    id: 2,
+    id: 3,
     question: "Who developed Hearthstone?",
     answers: {
         a: "Riot Games",
@@ -119,7 +123,7 @@ function displayQuestion(questionNumber) {
 },
 
 {
-    id: 3,
+    id: 4,
     question: "How many cards are in a deck?",
     answers: {
         a: "15",
@@ -129,7 +133,7 @@ function displayQuestion(questionNumber) {
     },
     correctAnswer: "d"
 },
-{   id: 4,
+{   id: 5,
     question: "How many types of cards are there?",
     answers: {
         a: "4",
@@ -140,7 +144,7 @@ function displayQuestion(questionNumber) {
     correctAnswer: "a"
 },
 
-{   id: 5,
+{   id: 6,
     question: "What is the rarest card?",
     answers: {
         a: "Epic",
@@ -151,7 +155,7 @@ function displayQuestion(questionNumber) {
     correctAnswer: "c"
 },
 
-{   id: 6,
+{   id: 7,
     question: " True or False : The Assassinate card can destroy a minion with Divine Shield.",
     answers: {
         a: "True",
@@ -160,7 +164,7 @@ function displayQuestion(questionNumber) {
     correctAnswer: "a"
 },
 
-{   id: 7,
+{   id: 8,
     question: " True or False : You can increase the damage of Eye for an Eye with Spellpower.",
     answers: {
         a: "True",
@@ -169,7 +173,7 @@ function displayQuestion(questionNumber) {
     correctAnswer: "a"
 },
 
-{   id: 8,
+{   id: 9,
     question: " True or False : Crazed Alchemist's battlecry can destroy a minion with 0 Attack. ",
     answers: {
         a: "True",
@@ -178,7 +182,7 @@ function displayQuestion(questionNumber) {
     correctAnswer: "a"
 },
 
-{   id: 9,
+{   id: 10,
     question: "Mage has Spellbender secret readied. Opponent Rogue plays Shadowstept.",
     answers: {
         a: "Spellbender Minion will return to Mage's hand",
@@ -189,7 +193,7 @@ function displayQuestion(questionNumber) {
     correctAnswer: "a"
 },
 
-{   id: 10,
+{   id: 11,
     question: "Who says Put this apple on your head?",
     answers: {
         a: "Knife Juggler",
@@ -200,7 +204,7 @@ function displayQuestion(questionNumber) {
     correctAnswer: "a"
 },
 
-{   id: 11,
+{   id: 12,
     question: " Priest gains control of Paladin's minion with Blessing of Wisdom on it. Who will draw a card if this minion attacks?",
     answers: {
         a: "Paladin",
@@ -210,7 +214,7 @@ function displayQuestion(questionNumber) {
     correctAnswer: "a"
 },
 
-{   id: 12,
+{   id: 13,
     question: " Priest takes control of an enemy minion, then Rogue casts Sap on it.",
     answers: {
         a: "It will return to Rogue's hand",
@@ -221,7 +225,7 @@ function displayQuestion(questionNumber) {
     correctAnswer: "b"
 },
 
-{   id: 13,
+{   id: 14,
     question: " True or False : The Hunter's Snipe will trigger when opponent casts Animal Companion.",
     answers: {   
         a: "True",
