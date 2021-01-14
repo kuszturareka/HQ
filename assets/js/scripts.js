@@ -4,6 +4,13 @@ let questionNumber = 0;
 let score = 0;
 let totalQuestions = 13;
 
+
+$(document).ready(function($) {
+   $("#next").attr('disabled', 'disabled');
+   $("#start-btn").click(function(){
+     $("#next").removeAttr("disabled"); // removing attribute
+   })
+});
 startButton.addEventListener('click', function(){
     quizContainer.innerHTML = displayQuestion(questionNumber);
     //https://stackoverflow.com/questions/33049365/hide-a-div-onclick-in-pure-javascript//
