@@ -56,11 +56,15 @@ footer {
 
 .endgame {
     background: rgba(0, 0, 0, 0.5); 
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     vertical-align: middle;
     opacity: 70%;
    
+}
+
+.option {
+    font-size: 70px;
 }
 /*https://github.com/Code-Institute-Solutions/Love-Running-Solutions/tree/master/06_site_footer*/ 
 
