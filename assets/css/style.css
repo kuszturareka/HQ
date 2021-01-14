@@ -53,6 +53,12 @@ footer {
     width: 100%;
     
 }
+
+.endgame {
+    background: rgba(0, 0, 0, 0.5); 
+    font-size: 50px;
+    text-align: center;
+}
 /*/*https://github.com/Code-Institute-Solutions/Love-Running-Solutions/tree/master/06_site_footer*/ */
 .social-networks {
     text-align: center;
@@ -95,6 +101,16 @@ footer {
  body {
      font-size: 75%;
     }
-
+.quiz-container{
+    
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 }
 
+@media only screen and (min-width: 600px) {
+    
+
+}

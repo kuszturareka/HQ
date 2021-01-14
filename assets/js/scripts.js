@@ -1,6 +1,5 @@
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
-const submitButton = document.getElementById('submit');
 const startButton = document.getElementById('start-btn');
 let questionNumber = 0;
 let score = 0;
@@ -19,6 +18,7 @@ startButton.addEventListener('click', function(){
 $('#next').click(function(){
     console.log("Clicked");
 // step 2
+
     if(questionNumber > totalQuestions) {
         displayResult()
     } else {
@@ -35,7 +35,7 @@ $('#next').click(function(){
         let options = document.querySelectorAll('.option')
         options.forEach(function(option){
             if(option.checked){
-                selectedAnswer = option.defaultValue
+            selectedAnswer = option.defaultValue
             }
         })
         let question = myQuestions[questionNumber]
@@ -52,13 +52,14 @@ $('#next').click(function(){
             // answer is wrong
             console.log("Wrong Answer")
             }
+         let answers = myQuestions[correctAnswer]   
         }
 
 function displayResult(){
     $("#next").hide()
     console.log("End of Quiz")
     // display the total result in the DOM
-    quizContainer.innerHTML = `<div>End of Game. Total score is ${score}</div>`;
+    quizContainer.innerHTML = `<div class="endgame" >End of Game. Total score is ${score}</div>`;
 }
 
 
