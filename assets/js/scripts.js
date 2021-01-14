@@ -39,7 +39,7 @@ $('#next').click(function(){
             }
         })
         let question = myQuestions[questionNumber - 1]
-        let correctAnswer = ["b"]
+        let correctAnswer = ["a"]
         console.log("questionNumber", questionNumber)
         console.log("question", question)
         console.log("selectedAnswer", selectedAnswer)
