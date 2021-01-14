@@ -117,7 +117,7 @@ A large amount of testing was done to ensure that all pages were linking correct
  10. When the correct answer is being clicked on, it is being recognized as a wrong answer. When clicking "Next", the console implies that the question has been answered correctly. 
 
 ### **Known Bugs**
-
+1. First question is doubled, but not interfering with the final score. Need to remove one instance of the question.
 
 
 ## **Deployment**
