@@ -7,7 +7,7 @@
     color: #730851;
     vertical-align: middle;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 10%;
 }
 
 .btn {
@@ -56,10 +56,14 @@ footer {
 
 .endgame {
     background: rgba(0, 0, 0, 0.5); 
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
+    vertical-align: middle;
+    opacity: 70%;
+   
 }
-/*/*https://github.com/Code-Institute-Solutions/Love-Running-Solutions/tree/master/06_site_footer*/ */
+/*https://github.com/Code-Institute-Solutions/Love-Running-Solutions/tree/master/06_site_footer*/ 
+
 .social-networks {
     text-align: center;
     list-style-type: none;
