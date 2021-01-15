@@ -83,10 +83,12 @@ They are roughly sketched out and can be found at the following [link](https://m
  
 
 ### Future Features: 
-1.Adding a timer
-2.
-3.Changing the background image for every question, since it would probably make the game more appealing.
-4.Aligning the answers.
+1. Adding a timer 
+
+ 2. Changing the background image for every question, since it would probably make the game more appealing.
+ 
+ 3. Aligning the answers.
+
 ## Technologies Used
 ### Languages Used
 
@@ -117,11 +119,12 @@ They are roughly sketched out and can be found at the following [link](https://m
 ## **Testing**
 ### **Testing**
 
-The [W3C Markup Validator](https://validator.w3.org/) and [W3C CSS Validator Services](https://jigsaw.w3.org/css-validator/validator) were used to validate the project to ensure there were no syntax errors.
+The [W3C Markup Validator](https://validator.w3.org/) and [W3C CSS Validator Services](https://jigsaw.w3.org/css-validator/) were used to validate the project to ensure there were no syntax errors.
 
-     W3C Markup Validator - Results
+![W3C Markup Validator - Results](assets/images/HTML.jpg) 
+![W3C CSS Validator - Results](assets/images/CSS.jpg)
 
-Also, [JSHint](https://jshint.com/) was used for the Javascript file. 
+Also, [JSHint](https://jshint.com/) was used for the JS file. 
 
 ### **Automated Testing** 
 For the automated testing, I have used Lighthouse. Results can be found in the **Testing Folder**.
