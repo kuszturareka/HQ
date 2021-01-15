@@ -154,6 +154,7 @@ A large amount of testing was done to ensure that the quiz was linking correctly
  8. Console displaying wrong question ID compared to what appears on the live site - fixed by  modifying the ID of the question and the total number of questions. 
  9. Total score not appearing after the last question - fixed by modifying the total number of questions (14 in total, but starting from 0).
  10. When the correct answer is being clicked on, it is being recognized as a wrong answer. When clicking "Next", the console implies that the question has been answered correctly - fixed by sorting out the selected/correct answers. 
+ 11. Next button appearing on landing page - fixed by using the hide/show methods. 
 
 ### **Known Bugs**
 1. First question is doubled, but not interfering with the final score. Need to remove one instance of the question.
@@ -178,8 +179,14 @@ Scroll back down through the page to locate the now published site link in the "
 ## **Credits**
 
 ### **Content**
-The quiz information (Q/A) has been taken from [Youtube](https://www.youtube.com/watch?v=N3unf-eGS9Q)
-https://www.atablefullofjoy.com/what-is-hearthstone/#:~:text=Hearthstone%20is%20a%20fun%2C%20free,to%20learn%20and%20massively%20fun.
+- The quiz information (Q/A) has been taken from [Youtube](https://www.youtube.com/watch?v=N3unf-eGS9Q)
+- The info for the upper part of the Readme.md was taken from [Hearthstone Wiki](https://hearthstone.fandom.com/wiki/Hero) and [What is Hearthstone](https://www.atablefullofjoy.com/what-is-hearthstone/#:~:text=Hearthstone%20is%20a%20fun%2C%20free,to%20learn%20and%20massively%20fun.).
+- Inpiration for the README.md came from [Awkale.me](http://awkale.me/user-story-best-practice/), [Markdown Tutorial](https://commonmark.org/help/tutorial/), [Code Institute Solutions](https://github.com/Code-Institute-Solutions/SampleREADME)/[Anna Greaves](https://www.youtube.com/watch?v=7BteidgLAyM&amp;feature=youtu.be). 
+### **Media**
+- The background image was taken from [here](https://wallpaperaccess.com/full/973179.jpg).  
 
-[https://hearthstone.fandom.com/wiki/Hero]
 ### **Acknowledgements**
+- Shout-out to my mentor, Ignatius Ukwuoma, without whom I wouldn't have been able to finish the project. 
+
+**Sidenote:** 
+    The project itself is rudimentary, mostly because of my limited Javascript knowledge. Personally, I could not assimilate the information properly, so I focused on creating a simple but functional quiz, without extra features like a timer or form.  
