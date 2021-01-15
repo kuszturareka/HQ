@@ -31,7 +31,7 @@ Each hero has a Class, and a Hero Power (an ability that can be used once per tu
 
 When your opponent's hero's Health is reduced to 0, you win the game.
 
-[https://hearthstone.fandom.com/wiki/Hero]
+
 
 ## Table of Content
   * [UX (User Experience)](#ux--user-experience-)
@@ -57,7 +57,13 @@ When your opponent's hero's Health is reduced to 0, you win the game.
 * As an old Hearthstone player, I would like to try the quiz out of fun.
 
 ### User Goals
- * 
+ * Find out if the user has basic Hearthstone knowledge.
+ * Have a little fun.
+
+ ### User Requirements and Expectations ###
+ * Intuitive layout. 
+ * Easy to use. 
+ * Receive the correct result at the end of the quiz.
 ## Design
 ### Colour Scheme
 
@@ -77,17 +83,18 @@ They are roughly sketched out and can be found at the following [link](https://m
 ## Features
 ### Existing Features:
 
-1.   Short and fun quiz which displays the results quickly. 
-2.   Instructive  
-3.   Social Media/Enter Game and Next buttons
+1.   Short, fun and instructive quiz which displays the results quickly.  
+2.   Social Media/Enter Game and Next buttons
  
 
 ### Future Features: 
-1. Adding a timer 
+ 1. Adding a timer 
 
  2. Changing the background image for every question, since it would probably make the game more appealing.
  
  3. Aligning the answers.
+
+ 4. Creating the possibility for the user to enter their nickname. 
 
 ## Technologies Used
 ### Languages Used
@@ -124,7 +131,7 @@ The [W3C Markup Validator](https://validator.w3.org/) and [W3C CSS Validator Ser
 ![W3C Markup Validator - Results](assets/images/HTML.jpg) 
 ![W3C CSS Validator - Results](assets/images/CSS.jpg)
 
-Also, [JSHint](https://jshint.com/) was used for the JS file. 
+[JSHint](https://jshint.com/) was used for the JS file. 
 
 ### **Automated Testing** 
 For the automated testing, I have used Lighthouse. Results can be found in the **Testing Folder**.
@@ -134,7 +141,7 @@ The Website was tested on Google Chrome, Microsoft Edge and Opera browsers.
 
 The website was viewed on a variety of devices such as Laptop, Huawei P30 Pro, Huawei P20 Pro and Samsung S9.
 
-A large amount of testing was done to ensure that all pages were linking correctly.
+A large amount of testing was done to ensure that the quiz was linking correctly. Part of this testing was done in Chrome Developer Tools, to ensure that the responsiveness was acting the way it should. I have also used the console to make sure that I do not get any internal errors for the deployed project (even though it was the case before). 
 
 ### **Fixed Bugs**
  1. Footer not sticking to the bottom - fixed in CSS by using the "position : fixed" and "bottom : 0" elements.
@@ -174,4 +181,5 @@ Scroll back down through the page to locate the now published site link in the "
 The quiz information (Q/A) has been taken from [Youtube](https://www.youtube.com/watch?v=N3unf-eGS9Q)
 https://www.atablefullofjoy.com/what-is-hearthstone/#:~:text=Hearthstone%20is%20a%20fun%2C%20free,to%20learn%20and%20massively%20fun.
 
+[https://hearthstone.fandom.com/wiki/Hero]
 ### **Acknowledgements**
