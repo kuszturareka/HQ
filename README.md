@@ -31,7 +31,7 @@ Each hero has a Class, and a Hero Power (an ability that can be used once per tu
 
 When your opponent's hero's Health is reduced to 0, you win the game.
 
-
+![Mockup](assets/images/Untitled.png)
 
 ## Table of Content
   * [UX (User Experience)](#ux--user-experience-)
