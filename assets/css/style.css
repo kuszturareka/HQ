@@ -26,7 +26,7 @@ body {
     margin-bottom: 50px;
 }
 
-.quiz-container{
+.quiz-container {
     
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
@@ -44,14 +44,12 @@ body {
     margin-bottom: 20px
 }
 
-
 footer {
     background-color: #54053b;
     opacity: 90%;
     position: fixed;
     bottom: 0px;
-    width: 100%;
-    
+    width: 100%;  
 }
 
 .endgame {
@@ -60,7 +58,6 @@ footer {
     text-align: center;
     vertical-align: middle;
     opacity: 70%;
-   
 }
 
 .option {
@@ -68,7 +65,6 @@ footer {
     text-align: left;
 }
 /*https://github.com/Code-Institute-Solutions/Love-Running-Solutions/tree/master/06_site_footer*/ 
-
 .social-networks {
     text-align: center;
     list-style-type: none;
@@ -79,7 +75,6 @@ footer {
     display: inline-block;
     margin-top: 10px;
     vertical-align: middle;
-
 }
 
 .social-networks i {
@@ -88,18 +83,17 @@ footer {
     text-align: center;
 }
 
-
 .answers {
   margin-bottom: 20px;
   text-align: center;
   display: inline-block;
 
 }
-.answers label{
+
+.answers label {
   display: block;
-  margin-bottom: 5px;}
-
-
+  margin-bottom: 5px;
+}
 
 @media screen and (max-width: 600px) {
     #logo {
@@ -107,19 +101,13 @@ footer {
         display: table;
         padding-left: 50px;
     }
- body {
-     font-size: 75%;
+    body {
+        font-size: 75%;
     }
-.quiz-container{
-    
+    .quiz-container {
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
     margin-top: 50px;
     margin-bottom: 50px;
 }
-}
-
-@media only screen and (min-width: 600px) {
-    
-
 }
