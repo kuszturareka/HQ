@@ -152,12 +152,12 @@ A large amount of testing was done to ensure that the quiz was linking correctly
  6. Vertically aligned the Hearthstone Quiz logo. but it moved to the left - fixed by removing the display table value. 
  7. Quiz not moving forward when clicking Next - fixed by correcting "if" statement (myQuestions instead of questions).
  8. Console displaying wrong question ID compared to what appears on the live site - fixed by  modifying the ID of the question and the total number of questions. 
- 9. Total score not appearing after the last question - modified the total number of questions (14 in total, but starting from 0).
- 10. When the correct answer is being clicked on, it is being recognized as a wrong answer. When clicking "Next", the console implies that the question has been answered correctly. 
+ 9. Total score not appearing after the last question - fixed by modifying the total number of questions (14 in total, but starting from 0).
+ 10. When the correct answer is being clicked on, it is being recognized as a wrong answer. When clicking "Next", the console implies that the question has been answered correctly - fixed by sorting out the selected/correct answers. 
 
 ### **Known Bugs**
 1. First question is doubled, but not interfering with the final score. Need to remove one instance of the question.
-2. 
+2. Footer icons not centering in mobile view. 
 
 
 ## **Deployment** ##
