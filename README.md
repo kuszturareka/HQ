@@ -183,14 +183,14 @@ Scroll back down through the page to locate the now published site link in the "
 ## **Credits**
 
 ### **Content**
-- The quiz information (Q/A) has been taken from [Youtube](https://www.youtube.com/watch?v=N3unf-eGS9Q)
+- The quiz information (Q/A) has been taken from [Youtube](https://www.youtube.com/watch?v=N3unf-eGS9Q).
 - The info for the upper part of the Readme.md was taken from [Hearthstone Wiki](https://hearthstone.fandom.com/wiki/Hero) and [What is Hearthstone](https://www.atablefullofjoy.com/what-is-hearthstone/#:~:text=Hearthstone%20is%20a%20fun%2C%20free,to%20learn%20and%20massively%20fun.).
 - Inpiration for the README.md came from [Awkale.me](http://awkale.me/user-story-best-practice/), [Markdown Tutorial](https://commonmark.org/help/tutorial/), [Code Institute Solutions](https://github.com/Code-Institute-Solutions/SampleREADME)/[Anna Greaves](https://www.youtube.com/watch?v=7BteidgLAyM&amp;feature=youtu.be). 
 ### **Media**
 - The background image was taken from [here](https://wallpaperaccess.com/full/973179.jpg).  
 
 ### **Acknowledgements**
-- Shout-out to my mentor, Ignatius Ukwuoma, without whom I wouldn't have been able to finish the project. 
+- Shout-out to my mentor, Ignatius Ukwuoma, without whom I wouldn't have been able to do, let alone finish this challenging milestone project.
 
 **Sidenote:** 
-    The project itself is rudimentary, mostly because of my limited Javascript knowledge. Personally, I could not assimilate the information properly, so I focused on creating a simple but functional quiz, without extra features like a timer or form.  
+    The project itself is rudimentary, mostly because of my limited Javascript knowledge. Personally, I could not assimilate the information properly, so I focused on creating a simple but functional quiz, without extra features like a timer or form/modal.   

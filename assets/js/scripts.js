@@ -5,28 +5,22 @@ let score = 0;
 let totalQuestions = 13;
 
 // https://stackoverflow.com/questions/34798781/how-to-disable-a-button-until-another-button-is-clicked-in-jquery
-
-
-  $("#next").hide();
-  $("#start-btn").click(function(){
-  $("#next").show();
+$("#next").hide();
+$("#start-btn").click(function(){
+    $("#next").show();
 });
-
 
 startButton.addEventListener('click', function(){
     quizContainer.innerHTML = displayQuestion(questionNumber);
     //https://stackoverflow.com/questions/33049365/hide-a-div-onclick-in-pure-javascript//
     if (startButton) {
-       startButton.style.display = 'none';
+    startButton.style.display = 'none';
     }
 });
-
+// Ignatius Ukwuoma
 // step 1
 $('#next').click(function(){
-    console.log("Clicked");
-  
 // step 2
-
     if(questionNumber > totalQuestions) {
         displayResult();
     } else {
@@ -36,23 +30,23 @@ $('#next').click(function(){
     questionNumber++;
 });
 
-    function checkCorrectAnswer(questionNumber){
-        let selectedAnswer;
-        // grab checked element
-        //grab the alphabet
-        let options = document.querySelectorAll('.option');
-        options.forEach(function(option){
-            if(option.checked){
-            selectedAnswer = option.defaultValue;
-            }
+function checkCorrectAnswer(questionNumber){
+    let selectedAnswer;
+    // grab checked element
+    //grab the alphabet
+    let options = document.querySelectorAll('.option');
+    options.forEach(function(option){
+        if(option.checked){
+        selectedAnswer = option.defaultValue;
+        }
         });
-        let question = myQuestions[questionNumber - 1];
-        let correctAnswer = ["a"];
-        console.log("questionNumber", questionNumber);
-        console.log("question", question);
-        console.log("selectedAnswer", selectedAnswer);
-        console.log("correctAnswer", correctAnswer);
-        if (selectedAnswer == correctAnswer){
+    let question = myQuestions[questionNumber - 1];
+    let correctAnswer = ["a"];
+    console.log("questionNumber", questionNumber);
+    console.log("question", question);
+    console.log("selectedAnswer", selectedAnswer);
+    console.log("correctAnswer", correctAnswer);
+    if (selectedAnswer == correctAnswer){
         // answer is correct
         console.log("Correct answer");
         score++;
@@ -60,8 +54,6 @@ $('#next').click(function(){
         // answer is wrong
         console.log("Wrong answer");
     }
-
-
 }
 
 function displayResult(){
@@ -73,22 +65,22 @@ function displayResult(){
 
 
 function displayQuestion(questionNumber) {
-        const answers = [];
-        let question = myQuestions[questionNumber];
-        for(var answer in question.answers){
-            answers.push(
-                `<label>
-                <input class= "option" type="radio" name="question${questionNumber}" value="${answer}">
-                ${answer} :
-                ${question.answers[answer]}
-                </label>`
+    const answers = [];
+    let question = myQuestions[questionNumber];
+    for(var answer in question.answers){
+        answers.push(
+             `<label>
+            <input class= "option" type="radio" name="question${questionNumber}" value="${answer}">
+            ${answer} :
+            ${question.answers[answer]}
+            </label>`
             );
             }
 
-            return `<div class="question"> ${question.question} </div>
-                    <div class="answers"> ${answers.join("")} </div>
-                   ` ;
-      }
+        return `<div class="question"> ${question.question} </div>
+                 <div class="answers"> ${answers.join("")} </div>
+                ` ;
+}
 
     
  const myQuestions = [
