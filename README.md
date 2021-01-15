@@ -64,6 +64,10 @@ When your opponent's hero's Health is reduced to 0, you win the game.
  * Intuitive layout. 
  * Easy to use. 
  * Receive the correct result at the end of the quiz.
+
+ ![Landing](assets/images/Landing.png)
+ ![First](assets/images/First.png)
+ ![Last](assets/images/Last.png)
 ## Design
 ### Colour Scheme
 
