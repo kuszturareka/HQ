@@ -185,7 +185,7 @@ Scroll back down through the page to locate the now published site link in the "
 ### **Content**
 - The quiz information (Q/A) has been taken from [Youtube](https://www.youtube.com/watch?v=N3unf-eGS9Q).
 - General Javascript quiz info was take from [here](https://www.sitepoint.com/simple-javascript-quiz/?fbclid=IwAR3Yth6dYZJ6rtB9fxBHaajmibEV_H-HryAeYDh0vXDJvAjxW0KN7LbHQJs) and [here](https://codereview.stackexchange.com/questions/119804/answer-checking-script).
-- I have also used info from [W3Schools]https://www.w3schools.com/ for clearing the air with certain problems I have faced. 
+- I have also used info from [W3Schools](https://www.w3schools.com/) for clearing the air with certain problems I have faced. 
 - The info for the upper part of the Readme.md was taken from [Hearthstone Wiki](https://hearthstone.fandom.com/wiki/Hero) and [What is Hearthstone](https://www.atablefullofjoy.com/what-is-hearthstone/#:~:text=Hearthstone%20is%20a%20fun%2C%20free,to%20learn%20and%20massively%20fun.).
 - Inpiration for the README.md came from [Awkale.me](http://awkale.me/user-story-best-practice/), [Markdown Tutorial](https://commonmark.org/help/tutorial/), [Code Institute Solutions](https://github.com/Code-Institute-Solutions/SampleREADME)/[Anna Greaves](https://www.youtube.com/watch?v=7BteidgLAyM&amp;feature=youtu.be). 
 ### **Media**
