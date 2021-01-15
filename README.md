@@ -2,6 +2,11 @@
 
 ![](assets/images/logo.png)
 
+For my second milesone project, I have decided to remake a short, concise Hearthstone quiz. The purpose of the quiz is to test your knowledge about the game (be it cards or heroes).
+Though, at the moment, the project does not look the way I initially wanted it, it sums up the general idea. 
+
+**A little bit about the game ...**
+
 Hearthstone is a fast-paced strategy card game that's easy to learn and massively fun.
 
 The game allows you to earn gold, card packs and dust. Gold can be used to buy card packs, play in the arena or buy solo adventures. Card packs are always full of random cards that you can collect and use to craft new decks. Dust can be used to create any card you want!
@@ -29,54 +34,59 @@ When your opponent's hero's Health is reduced to 0, you win the game.
 [https://hearthstone.fandom.com/wiki/Hero]
 
 ## Table of Content
-  - #### [UX (User Experience)](#ux--user-experience-)
-    - #### [User Stories](#user-stories)
-    - #### [User Goals](#user-goals)
-    - #### [Design](#design)
-        - #### [Color Scheme](#color-scheme) 
-        - #### [Typography](#typography)
-    - #### [Wireframes](#wireframes)    
-    - #### [Features](#features)
-        - #### [Existing Features](#existing-features)
-        - #### [Future Features](#future-features) 
-    - #### [Technologies Used](#technologies-used)
-    - #### [Testing](#testing)
+  * [UX (User Experience)](#ux--user-experience-)
+    + [User Stories](#user-stories)
+    + [User Goals](#user-goals)
+    + [Design](#design) 
+    + [Color Scheme](#color-scheme) 
+    + [Typography](#typography)
+  * [Wireframes](#wireframes)    
+  * [Features](#features)
+    + [Existing Features](#existing-features)
+    + [Future Features](#future-features) 
+  * [Technologies Used](#technologies-used)
+  * [Testing](#testing)
+  * [Deployment](#deployment)
+  * [Credits](#credits)
         
 
-# User Experience (UX)
+# User Experience (UX) #
 ## User Stories
-a. As a former World of Warcraft player, I would like to dive in the Hearthstone realm and relive the narrative.
+* As a new Hearthstone player, I would like to test my newly acquired knowledge. 
 
-b. As a Hearthstone player, I would like to try the quiz out of fun.
+* As an old Hearthstone player, I would like to try the quiz out of fun.
 
 ### User Goals
-
+ * 
 ## Design
 ### Colour Scheme
 
 The two main colours used are a dark shade of magenta (#730851) and white.
 
-Color scheme taken from [Scheme Color](https://www.schemecolor.com/hearthstone-logo-colors.php).
+Color scheme taken from [Color Hex](https://www.colorhexa.com/730851).
 
 ### Typography
-
+ * I used [Asul](https://fonts.google.com/specimen/Asul#standard-styles) for the text, because it gave me a World of Warcraft/Hearthstone-y vibe. It was the only font that merely resembled the game fonts, was available and was easy to read. 
 
 
 ## Wireframes
-[Marvel Wireframe](https://marvelapp.com/project/5409869/design/75801397)
+
+For my wireframes, I used [Marvel Wireframes](https://marvelapp.com/)
+They are roughly sketched out and can be found at the following [link](https://marvelapp.com/project/5409869/design/75801397).
+
 ## Features
 ### Existing Features:
 
-1.   
-2.  
-3. 
-4. 
+1.   Short and fun quiz which displays the results quickly. 
+2.   Instructive  
+3.   Social Media/Enter Game and Next buttons
+ 
 
 ### Future Features: 
-1.
+1.Adding a timer
 2.
-3.
-4.
+3.Changing the background image for every question, since it would probably make the game more appealing.
+4.Aligning the answers.
 ## Technologies Used
 ### Languages Used
 
@@ -113,7 +123,7 @@ The [W3C Markup Validator](https://validator.w3.org/) and [W3C CSS Validator Ser
 
 Also, [JSHint](https://jshint.com/) was used for the Javascript file. 
 
-### **Automated Testing**
+### **Automated Testing** 
 For the automated testing, I have used Lighthouse. Results can be found in the **Testing Folder**.
 
 ### **Further Testing**
@@ -140,7 +150,7 @@ A large amount of testing was done to ensure that all pages were linking correct
 2. 
 
 
-## **Deployment**
+## **Deployment** ##
 The project was deployed to GitHub Pages using the following steps:
 
 Log in to GitHub and locate the GitHub Repository.
